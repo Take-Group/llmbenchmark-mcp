@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+  "name": "ai.llmbenchmark/llmbenchmark",
+  "title": "LLMBenchmark.ai",
+  "description": "Which LLM for which task: benchmark scores and API prices for 350+ models. Free, no key.",
+  "version": "1.0.0",
+  "websiteUrl": "https://llmbenchmark.ai/api",
+  "repository": {
+    "url": "https://github.com/Take-Group/llmbenchmark-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.llmbenchmark.ai/mcp"
+    }
+  ]
+}
