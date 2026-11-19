@@ -1,8 +1,8 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "ai.llmbenchmark/llmbenchmark",
   "title": "LLMBenchmark.ai",
-  "description": "Which LLM for which task: benchmark scores and API prices for 350+ models. Free, no key.",
+  "description": "Which LLM for which task: benchmark scores and API prices for 400+ models. Free, no key.",
   "version": "1.0.0",
   "websiteUrl": "https://llmbenchmark.ai/api",
   "repository": {
@@ -13,6 +13,15 @@
     {
       "type": "streamable-http",
       "url": "https://api.llmbenchmark.ai/mcp"
+    }
+  ],
+  "icons": [
+    {
+      "src": "https://llmbenchmark.ai/apple-touch-icon.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "180x180"
+      ]
     }
   ]
 }

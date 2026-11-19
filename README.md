@@ -1,6 +1,6 @@
 # LLMBenchmark.ai MCP server
 
-Ask "which model should I use for this task?" and get an answer from benchmark scores and API prices of 350+ LLMs, updated daily.
+Ask "which model should I use for this task?" and get an answer from benchmark scores and API prices of 400+ LLMs, updated daily.
 
 - Free. No API key. 500 requests per IP per UTC day.
 - Remote server, Streamable HTTP: `https://api.llmbenchmark.ai/mcp`
@@ -81,3 +81,5 @@ curl "https://api.llmbenchmark.ai/v1/recommend?task=refactor+a+large+React+codeb
 - The data the server returns: CC BY 4.0. Credit "LLMBenchmark.ai" with a link to https://llmbenchmark.ai. Each score names its source board and the day it was read; the boards keep their own terms.
 
 Run by [Take Group](https://takegroup.pl).
+
+<!-- mcp-name: ai.llmbenchmark/llmbenchmark -->
