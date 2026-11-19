@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "llmbenchmark": {
+      "url": "https://api.llmbenchmark.ai/mcp"
+    },
+    "llmbenchmark-local": {
+      "command": "uvx",
+      "args": ["llmbenchmark-mcp"]
+    }
+  }
+}

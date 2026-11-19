@@ -47,6 +47,35 @@ url = "https://api.llmbenchmark.ai/mcp"
 }
 ```
 
+**Install as a local server (stdio)**
+
+The package proxies to the hosted server, so clients that only start local commands can use it too. Needs [uv](https://docs.astral.sh/uv/).
+
+```bash
+uvx llmbenchmark-mcp
+```
+
+Claude Desktop (`claude_desktop_config.json`):
+
+```json
+{
+  "mcpServers": {
+    "llmbenchmark": {
+      "command": "uvx",
+      "args": ["llmbenchmark-mcp"]
+    }
+  }
+}
+```
+
+Docker, built from this repository:
+
+```bash
+docker build -t llmbenchmark-mcp . && docker run -i --rm llmbenchmark-mcp
+```
+
+Set `LLMBENCHMARK_MCP_URL` to point the proxy at another endpoint.
+
 ## Tools
 
 | Tool | What it does |
@@ -66,6 +95,16 @@ url = "https://api.llmbenchmark.ai/mcp"
 - "What is the best open-weight model for math with at least a 128k context window?"
 - "Compare Claude Opus and GPT-6 Astra for coding."
 - "Which models are cheapest on output price from DeepSeek?"
+
+## CLI
+
+```bash
+llmbenchmark-mcp recommend "refactor a React app" --max-price 5 --open-weights
+llmbenchmark-mcp tools
+llmbenchmark-mcp config
+```
+
+`recommend` prints the `recommend_model` answer, `tools` lists the tool names, `config` prints the remote JSON config for Claude or Cursor. With no arguments the command runs the stdio server.
 
 ## REST
 
