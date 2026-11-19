@@ -3,7 +3,7 @@
   "name": "ai.llmbenchmark/llmbenchmark",
   "title": "LLMBenchmark.ai",
   "description": "Which LLM for which task: benchmark scores and API prices for 400+ models. Free, no key.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://llmbenchmark.ai/api",
   "repository": {
     "url": "https://github.com/Take-Group/llmbenchmark-mcp",
@@ -22,6 +22,16 @@
       "sizes": [
         "180x180"
       ]
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "llmbenchmark-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      }
     }
   ]
 }
